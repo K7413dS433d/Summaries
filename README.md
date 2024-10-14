@@ -1,2 +1,10 @@
 # Summaries
-A brief summary of everything I learned as a frontend or backend
+# Full-Stack Learning Journey
+
+Welcome to my Full-Stack Development journey! This project is divided into two main sections: **Frontend** and **Backend**. Each section contains summaries, notes, and links to more detailed documents.
+
+## Table of Contents
+
+- [Frontend](#frontend)
+  - [Next](./Frontend/README.NEXT.md)
+- [Backend](#backend)
