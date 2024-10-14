@@ -6,5 +6,5 @@ Welcome to my Full-Stack Development journey! This project is divided into two m
 ## Table of Contents
 
 - [Frontend](#frontend)
-  - [Next](./Frontend/README.NEXT.md)
+  - [Next](./Frontend/Next/README.NEXT.md)
 - [Backend](#backend)
