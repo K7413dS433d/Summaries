@@ -1,7 +1,3 @@
-Here's the updated README file with your provided information incorporated, including a functional table of contents:
-
----
-
 # Bash Script README
 
 This README provides a comprehensive overview of basic Bash scripting, common commands, file manipulation, permission management, redirection, piping, arithmetic operations, and debugging techniques.
@@ -17,11 +13,12 @@ This README provides a comprehensive overview of basic Bash scripting, common co
 5. [Redirection and Piping](#redirection-and-piping)
 6. [Text Manipulation](#text-manipulation)
 7. [Bash Operators](#bash-operators)
-8. [Mathematical and Logical Expressions](#mathematical-and-logical-expressions)
-9. [Variables in Bash](#variables-in-bash)
-10. [Bash Control Flow](#bash-control-flow)
-11. [Debugging Bash Scripts](#debugging-bash-scripts)
-12. [Other Utilities](#other-utilities)
+8. [Numerical Comparison Operators](#numerical-comparison-operators)
+9. [Mathematical and Logical Expressions](#mathematical-and-logical-expressions)
+10. [Variables in Bash](#variables-in-bash)
+11. [Bash Control Flow](#bash-control-flow)
+12. [Debugging Bash Scripts](#debugging-bash-scripts)
+13. [Other Utilities](#other-utilities)
 
 ---
 
@@ -101,13 +98,81 @@ To run a Bash script:
 
 ## Bash Operators
 
-- `&&` — Logical AND (combines multiple commands).
-- `||` — Logical OR.
-- `>` — Greater than.
-- `<` — Less than.
-- `=`, `!=` — String comparison.
-- `-a` — Logical AND for test expressions.
-- `-o` — Logical OR for test expressions.
+- **`&&`** — Logical AND (combines multiple commands).
+- **`||`** — Logical OR.
+- **`>`** — Greater than.
+- **`<`** — Less than.
+- **`=`**, **`!=`** — String comparison.
+
+---
+
+## Numerical Comparison Operators
+
+- **`-eq`**: Checks if two numbers are equal.
+  ```bash
+  if [ "$a" -eq "$b" ]; then
+      echo "a is equal to b"
+  fi
+  ```
+
+- **`-ne`**: Checks if two numbers are not equal.
+  ```bash
+  if [ "$a" -ne "$b" ]; then
+      echo "a is not equal to b"
+  fi
+  ```
+
+- **`-lt`**: Checks if the left number is less than the right number.
+  ```bash
+  if [ "$a" -lt "$b" ]; then
+      echo "a is less than b"
+  fi
+  ```
+
+- **`-le`**: Checks if the left number is less than or equal to the right number.
+  ```bash
+  if [ "$a" -le "$b" ]; then
+      echo "a is less than or equal to b"
+  fi
+  ```
+
+- **`-gt`**: Checks if the left number is greater than the right number.
+  ```bash
+  if [ "$a" -gt "$b" ]; then
+      echo "a is greater than b"
+  fi
+  ```
+
+- **`-ge`**: Checks if the left number is greater than or equal to the right number.
+  ```bash
+  if [ "$a" -ge "$b" ]; then
+      echo "a is greater than or equal to b"
+  fi
+  ```
+
+### Example of Using Comparison Operators
+
+```bash
+#!/bin/bash
+
+a=10
+b=20
+
+if [ "$a" -eq "$b" ]; then
+    echo "a is equal to b"
+elif [ "$a" -lt "$b" ]; then
+    echo "a is less than b"
+elif [ "$a" -gt "$b" ]; then
+    echo "a is greater than b"
+else
+    echo "a is not equal to b"
+fi
+```
+
+### Important Notes
+
+- **Quotes**: Always quote your variables to prevent errors when they are empty or contain spaces.
+- **Brackets**: You can use `[ ]` or `[[ ]]` for tests, but `[[ ]]` is generally preferred in modern Bash scripts for its additional features, such as pattern matching and logical operators.
 
 ---
 
@@ -117,7 +182,7 @@ To run a Bash script:
   - `expr` — Example: `z=$(expr 1 + 2)`
   - `let` — Example: `let z=1+2`
   - `$((expression))` — Example: `z=$((1 + 2))`
-  - Increment and decrement: `((z++))` or `((x+=2)).`
+  - Increment and decrement: `((z++))` or `((x+=2))`
 - Logic gates in bash:
   - `-a` — AND.
   - `-o` — OR.
@@ -188,4 +253,4 @@ To run a Bash script:
 - `apropos <keyword>` — Search the manual page descriptions for a keyword.
 - `history` — Display the command history.
 - `alias <name>=<command>` — Create an alias for a command.
-- `unalias <name>` — Remove an alias.
+- `unalias <name>` —
