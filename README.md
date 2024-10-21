@@ -11,4 +11,4 @@ Welcome to my Full-Stack Development journey! This project is divided into two m
 - [Languages]()
   - [BASH](./Languages/Bash/README.Bash.md)
 - [Tools]()
-  - [Git & Github](./Languages/Git&Github/README.Git&Github.md)
+  - [Git & Github](./Tools/Git&Github/README.Git&Github.md)
