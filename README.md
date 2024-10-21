@@ -8,3 +8,5 @@ Welcome to my Full-Stack Development journey! This project is divided into two m
 - [Frontend](#frontend)
   - [Next](./Frontend/Next/README.NEXT.md)
 - [Backend](#backend)
+- [Languages]()
+  - [BASH](./Languages/README.BASH.md)
